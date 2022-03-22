@@ -138,6 +138,10 @@ function esImpar(num) {
   // }else{
   //   return false ;
   // }
+
+
+
+  
 }
 
 function elevarAlCuadrado(num) {
