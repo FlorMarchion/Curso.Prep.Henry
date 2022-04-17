@@ -107,7 +107,7 @@ describe('numeroMasGrande(numbers)', function() {
   });
 });
 
-fdescribe('multiplicarArgumentos()', function () {
+describe('multiplicarArgumentos()', function () {
   it('should return the product of all the arguments', function () {
     const product = multiplicarArgumentos(5, 5);
     const product2 = multiplicarArgumentos();
@@ -139,7 +139,7 @@ describe('diaDeLaSemana(numeroDeDia)', function() {
   });
 });
 
-fdescribe('empiezaConNueve(n))', function() {
+describe('empiezaConNueve(n))', function() {
   it('should return true or false in case the received number starts with nine', function() {
     expect(empiezaConNueve(98)).toBe(true);
     expect(empiezaConNueve(9)).toBe(true);
@@ -149,7 +149,7 @@ fdescribe('empiezaConNueve(n))', function() {
   });
 });
 
-describe('todosIguales(arreglo)', function() {
+fdescribe('todosIguales(arreglo)', function() {
   it('should return true if all the elements of the array are equal and false otherwise', function() {
     expect(todosIguales([20, 20, 20, 20 ])).toBe(true);
     expect(todosIguales([97, 100, 190, 9])).toBe(false);

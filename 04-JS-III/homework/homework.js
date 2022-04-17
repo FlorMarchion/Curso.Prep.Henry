@@ -155,7 +155,7 @@ function empiezaConNueve(n) {
   //Escribe tu código aquí
   let numberToString = n.toString();
 
-  if(numberToString.charAt(0) === '9'){
+  if (numberToString.charAt(0) === '9') {
     return true
   } else {
     return false
@@ -167,9 +167,18 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
+  let s = new Set(arreglo)
+  let arrayNuevo = Array.from(s)
+  if (arrayNuevo.length === 1) {
+    return true
+  } if (arrayNuevo.length > 1) {
+    return false
+  }
+
+
+  //return arreglo.every(v => v === arreglo[0]); 
 
 }
-
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
