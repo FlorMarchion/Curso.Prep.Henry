@@ -28,11 +28,6 @@ function incrementarPorUno(array) {
   // Tu código:
   let nuevoArray = [];
 
-  // [1, 2, 3, 4 ] => viejo
-
-  // [ 'gabi', ] => nuevo
-
-  // nuevo.push('gabi')
 
   for (let i = 0; i < array.length; i++) {
     nuevoArray[i] = array[i] + 1;
@@ -94,6 +89,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let suma = resultadosTest.reduce((acc, el) => acc + el)
+  return suma / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
@@ -174,8 +171,6 @@ function todosIguales(arreglo) {
   } if (arrayNuevo.length > 1) {
     return false
   }
-
-
   //return arreglo.every(v => v === arreglo[0]); 
 
 }
@@ -185,12 +180,30 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+
+  let mesesPedidos = [];
+  let mes;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      mes = array[i];
+      mesesPedidos.push(mes)
+    }
+  }
+
+  if (mesesPedidos.length === 3) {
+    return mesesPedidos
+  } else {
+    return 'No se encontraron los meses pedidos'
+  }
+
 }
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  
+ return array.filter(el => el > 100);
 }
 
 function breakStatement(numero) {
@@ -201,6 +214,22 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let arr = [];
+  let valores = numero;
+  let coincidio = false;
+
+  for (let i = 0; i < 10; i++) {
+    valores = valores + 2;
+    arr.push(valores);
+    if (i === valores) {
+      coincidio = true;
+      break;
+    }
+  }
+  if (coincidio) {
+    return 'Se interrumpió la ejecución'
+  }
+  return arr;
 }
 
 function continueStatement(numero) {
@@ -210,7 +239,19 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let arr = [];
+  let valores = numero;
+
+  for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+      continue;
+    }
+    valores = valores + 2;
+    arr.push(valores);
+  }
+  return arr;
 }
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------

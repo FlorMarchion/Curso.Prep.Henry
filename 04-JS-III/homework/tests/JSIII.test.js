@@ -149,7 +149,7 @@ describe('empiezaConNueve(n))', function() {
   });
 });
 
-fdescribe('todosIguales(arreglo)', function() {
+describe('todosIguales(arreglo)', function() {
   it('should return true if all the elements of the array are equal and false otherwise', function() {
     expect(todosIguales([20, 20, 20, 20 ])).toBe(true);
     expect(todosIguales([97, 100, 190, 9])).toBe(false);
