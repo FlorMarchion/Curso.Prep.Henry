@@ -144,7 +144,7 @@ describe('actualizarPassword(user, password)', function() {
   });
 });
 
-describe('agregarAmigo(user, newFriend)', function() {
+fdescribe('agregarAmigo(user, newFriend)', function() {
   it('should add a new friend to the end of the amigos array property', function() {
     const user = {
       amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
