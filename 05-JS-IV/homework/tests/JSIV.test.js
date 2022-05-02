@@ -144,7 +144,7 @@ describe('actualizarPassword(user, password)', function() {
   });
 });
 
-fdescribe('agregarAmigo(user, newFriend)', function() {
+describe('agregarAmigo(user, newFriend)', function() {
   it('should add a new friend to the end of the amigos array property', function() {
     const user = {
       amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
@@ -174,7 +174,7 @@ describe('pasarUsuarioAPremium(users)', function() {
   });
 });
 
-describe('sumarLikesDeUsuario(user)', function() {
+fdescribe('sumarLikesDeUsuario(user)', function() {
   it('should return the sum of likes for all user posts', function() {
     const user = {
       usernombre: 'Jhon Doe',

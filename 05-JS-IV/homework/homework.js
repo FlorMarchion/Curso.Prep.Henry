@@ -74,17 +74,17 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario.password === password ){
+  if (usuario.password === password) {
     return true;
-  }else return false ;
+  } else return false;
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario.password = nuevaPassword ;
-  return usuario ;
+  usuario.password = nuevaPassword;
+  return usuario;
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -92,9 +92,8 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
-  
-  amigos.push(nuevoAmigo);
-  return usuario ;
+  usuario.amigos.push(nuevoAmigo);
+  return usuario;
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -103,6 +102,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for (let i = 0; i < usuarios.length; i++) {
+    usuarios[i].esPremium = true;
+  }
+  return usuarios;
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -112,7 +115,14 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  let acc = 0;
+  for(let i = 0; i < usuario.posts.length; i++){
+    acc = acc + usuario.posts[i].likes
+  }
+  return acc;
 }
+
+
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
