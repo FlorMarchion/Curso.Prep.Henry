@@ -211,7 +211,7 @@ fdescribe('sumarLikesDeUsuario(user)', function() {
   });
 });
 
-describe('agregarMetodoCalculoDescuento(storeItem)', function() {
+fdescribe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
     precio: 80,
     porcentajeDeDescuento: 0.1,
