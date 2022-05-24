@@ -107,7 +107,7 @@ describe('numeroMasGrande(numbers)', function() {
   });
 });
 
-fdescribe('multiplicarArgumentos()', function () {
+describe('multiplicarArgumentos()', function () {
   it('should return the product of all the arguments', function () {
     const product = multiplicarArgumentos(5, 5);
     const product2 = multiplicarArgumentos();
