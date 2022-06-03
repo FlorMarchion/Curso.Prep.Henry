@@ -16,7 +16,7 @@ describe('mayuscula(nombre)', function() {
 	});
 });
 
-fdescribe('invocarCallback(cb)', function() {
+describe('invocarCallback(cb)', function() {
   it('should invoke the callback that is passed in', function() {
 		const cb = jest.fn();
 		invocarCallback(cb);

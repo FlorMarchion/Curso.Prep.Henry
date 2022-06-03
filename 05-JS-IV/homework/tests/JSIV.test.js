@@ -174,7 +174,7 @@ describe('pasarUsuarioAPremium(users)', function() {
   });
 });
 
-fdescribe('sumarLikesDeUsuario(user)', function() {
+describe('sumarLikesDeUsuario(user)', function() {
   it('should return the sum of likes for all user posts', function() {
     const user = {
       usernombre: 'Jhon Doe',
@@ -211,7 +211,7 @@ fdescribe('sumarLikesDeUsuario(user)', function() {
   });
 });
 
-fdescribe('agregarMetodoCalculoDescuento(storeItem)', function() {
+describe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
     precio: 80,
     porcentajeDeDescuento: 0.1,

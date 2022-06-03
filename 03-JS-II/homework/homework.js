@@ -11,17 +11,6 @@ function obtenerMayor(x, y) {
   return y;
 }
 
-// function gabi(num) {
-//   if (num > 2) {
-//     return "El numero es mayor a 2";
-//   } else if (num.length >= 10) {
-//     return "El numero tiene 2 digitos";
-//   } else {
-//     return `El numero es: ${num}`;
-//   }
-// }
-// gabi(2)
-
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
